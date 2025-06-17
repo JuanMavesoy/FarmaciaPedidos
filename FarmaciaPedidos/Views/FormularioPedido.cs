@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace FarmaciaPedidos
 {
-    public partial class FormularioPedido: Form
+    public partial class FormularioPedido : Form
     {
         public FormularioPedido()
         {
@@ -17,9 +17,9 @@ namespace FarmaciaPedidos
         {
             var pedido = new Pedido
             {
-                NombreMedicamento   =   txtNombreMedicamento.Text,
-                TipoMedicamento     =   comboBoxTipoMedicamento.SelectedItem?.ToString(),
-                Distribuidor        =   Cofarma.Checked ? "Cofarma" :
+                NombreMedicamento = txtNombreMedicamento.Text,
+                TipoMedicamento = comboBoxTipoMedicamento.SelectedItem?.ToString(),
+                Distribuidor = Cofarma.Checked ? "Cofarma" :
                                         Empsephar.Checked ? "Empsephar" :
                                         Cemefar.Checked ? "Cemefar" : null,
 
@@ -59,6 +59,26 @@ namespace FarmaciaPedidos
             Cemefar.Checked = false;
             Principal.Checked = false;
             Secundaria.Checked = false;
+        }
+
+        private void txtNombreMedicamento_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBoxTipoMedicamento_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
