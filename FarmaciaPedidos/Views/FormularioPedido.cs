@@ -1,6 +1,7 @@
 ﻿using FarmaciaPedidos.Models;
 using FarmaciaPedidos.Services;
 using System;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -11,13 +12,39 @@ namespace FarmaciaPedidos
         public FormularioPedido()
         {
             InitializeComponent();
+            Confirmar.BackColor =System.Drawing.Color.FromArgb(200, 200, 255);
+            Confirmar.ForeColor = System.Drawing.Color.Black;
+            Confirmar.FlatStyle = FlatStyle.Flat;
+            Confirmar.FlatAppearance.BorderSize = 0;
+
+            GraphicsPath path = new GraphicsPath();
+            path.AddArc(0, 0, 20, 20, 180, 90);
+            path.AddArc(Confirmar.Width - 20, 0, 20, 20, 270, 90);
+            path.AddArc(Confirmar.Width - 20, Confirmar.Height - 20, 20, 20, 0, 90);
+            path.AddArc(0, Confirmar.Height - 20, 20, 20, 90, 90);
+            path.CloseAllFigures();
+            Confirmar.Region = new System.Drawing.Region(path);
+
+            Borrar.BackColor = System.Drawing.Color.FromArgb(225, 225, 255);
+            Borrar.ForeColor = System.Drawing.Color.Black;
+            Borrar.FlatStyle = FlatStyle.Flat;
+            Borrar.FlatAppearance.BorderSize = 0;
+
+            GraphicsPath pathBorrar = new GraphicsPath();
+            pathBorrar.AddArc(0, 0, 20, 20, 180, 90);
+            pathBorrar.AddArc(Borrar.Width - 20, 0, 20, 20, 270, 90);
+            pathBorrar.AddArc(Borrar.Width - 20, Borrar.Height - 20, 20, 20, 0, 90);
+            pathBorrar.AddArc(0, Borrar.Height - 20, 20, 20, 90, 90);
+            pathBorrar.CloseAllFigures();
+            Borrar.Region = new System.Drawing.Region(pathBorrar);
         }
 
         private void Confirmar_Click(object sender, EventArgs e)
         {
             var pedido = new Pedido
             {
-                NombreMedicamento = txtNombreMedicamento.Text,
+                
+            NombreMedicamento = txtNombreMedicamento.Text,
                 TipoMedicamento = comboBoxTipoMedicamento.SelectedItem?.ToString(),
                 Distribuidor = Cofarma.Checked ? "Cofarma" :
                                         Empsephar.Checked ? "Empsephar" :

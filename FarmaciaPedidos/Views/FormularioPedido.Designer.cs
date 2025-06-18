@@ -46,9 +46,7 @@
             this.Lbl_pedido = new System.Windows.Forms.Label();
             this.Empsephar = new System.Windows.Forms.RadioButton();
             this.Cemefar = new System.Windows.Forms.RadioButton();
-            this.groupBoxDistribuidor = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.groupBoxDistribuidor.SuspendLayout();
             this.SuspendLayout();
             // 
             // NombreMedicamento
@@ -81,7 +79,11 @@
             // 
             // comboBoxTipoMedicamento
             // 
+            this.comboBoxTipoMedicamento.BackColor = System.Drawing.SystemColors.Window;
+            this.comboBoxTipoMedicamento.Cursor = System.Windows.Forms.Cursors.Hand;
             this.comboBoxTipoMedicamento.DisplayMember = "Seleccione;";
+            this.comboBoxTipoMedicamento.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxTipoMedicamento.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxTipoMedicamento.FormattingEnabled = true;
             this.comboBoxTipoMedicamento.Items.AddRange(new object[] {
             "Seleccione",
@@ -142,7 +144,7 @@
             // 
             this.Sucursal.AutoSize = true;
             this.Sucursal.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Sucursal.Location = new System.Drawing.Point(457, 406);
+            this.Sucursal.Location = new System.Drawing.Point(455, 393);
             this.Sucursal.Name = "Sucursal";
             this.Sucursal.Size = new System.Drawing.Size(70, 16);
             this.Sucursal.TabIndex = 8;
@@ -151,10 +153,10 @@
             // Principal
             // 
             this.Principal.AutoSize = true;
-            this.Principal.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Principal.Location = new System.Drawing.Point(545, 406);
+            this.Principal.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Principal.Location = new System.Drawing.Point(545, 393);
             this.Principal.Name = "Principal";
-            this.Principal.Size = new System.Drawing.Size(76, 21);
+            this.Principal.Size = new System.Drawing.Size(81, 20);
             this.Principal.TabIndex = 9;
             this.Principal.Text = "Principal";
             this.Principal.UseVisualStyleBackColor = true;
@@ -162,10 +164,10 @@
             // Secundaria
             // 
             this.Secundaria.AutoSize = true;
-            this.Secundaria.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Secundaria.Location = new System.Drawing.Point(647, 406);
+            this.Secundaria.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Secundaria.Location = new System.Drawing.Point(645, 393);
             this.Secundaria.Name = "Secundaria";
-            this.Secundaria.Size = new System.Drawing.Size(91, 21);
+            this.Secundaria.Size = new System.Drawing.Size(100, 20);
             this.Secundaria.TabIndex = 10;
             this.Secundaria.Text = "Secundaria";
             this.Secundaria.UseVisualStyleBackColor = true;
@@ -173,23 +175,25 @@
             // Confirmar
             // 
             this.Confirmar.BackColor = System.Drawing.Color.Transparent;
-            this.Confirmar.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Confirmar.Location = new System.Drawing.Point(522, 472);
+            this.Confirmar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Confirmar.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Confirmar.Location = new System.Drawing.Point(475, 472);
             this.Confirmar.Name = "Confirmar";
-            this.Confirmar.Size = new System.Drawing.Size(85, 32);
+            this.Confirmar.Size = new System.Drawing.Size(96, 32);
             this.Confirmar.TabIndex = 11;
-            this.Confirmar.Text = "Confirmar";
+            this.Confirmar.Text = "CONFIRMAR";
             this.Confirmar.UseVisualStyleBackColor = false;
             this.Confirmar.Click += new System.EventHandler(this.Confirmar_Click);
             // 
             // Borrar
             // 
-            this.Borrar.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Borrar.Location = new System.Drawing.Point(647, 472);
+            this.Borrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Borrar.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Borrar.Location = new System.Drawing.Point(616, 472);
             this.Borrar.Name = "Borrar";
-            this.Borrar.Size = new System.Drawing.Size(86, 32);
+            this.Borrar.Size = new System.Drawing.Size(96, 32);
             this.Borrar.TabIndex = 12;
-            this.Borrar.Text = "Borrar";
+            this.Borrar.Text = "BORRAR";
             this.Borrar.UseVisualStyleBackColor = true;
             this.Borrar.Click += new System.EventHandler(this.Borrar_Click);
             // 
@@ -219,7 +223,7 @@
             // 
             this.Empsephar.AutoSize = true;
             this.Empsephar.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Empsephar.Location = new System.Drawing.Point(11, 51);
+            this.Empsephar.Location = new System.Drawing.Point(544, 287);
             this.Empsephar.Name = "Empsephar";
             this.Empsephar.Size = new System.Drawing.Size(97, 20);
             this.Empsephar.TabIndex = 1;
@@ -231,7 +235,7 @@
             // 
             this.Cemefar.AutoSize = true;
             this.Cemefar.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Cemefar.Location = new System.Drawing.Point(12, 95);
+            this.Cemefar.Location = new System.Drawing.Point(545, 327);
             this.Cemefar.Name = "Cemefar";
             this.Cemefar.Size = new System.Drawing.Size(80, 20);
             this.Cemefar.TabIndex = 2;
@@ -239,22 +243,14 @@
             this.Cemefar.Text = "Cemefar";
             this.Cemefar.UseVisualStyleBackColor = true;
             // 
-            // groupBoxDistribuidor
-            // 
-            this.groupBoxDistribuidor.Controls.Add(this.Cemefar);
-            this.groupBoxDistribuidor.Controls.Add(this.Empsephar);
-            this.groupBoxDistribuidor.Location = new System.Drawing.Point(533, 236);
-            this.groupBoxDistribuidor.Name = "groupBoxDistribuidor";
-            this.groupBoxDistribuidor.Size = new System.Drawing.Size(200, 133);
-            this.groupBoxDistribuidor.TabIndex = 7;
-            this.groupBoxDistribuidor.TabStop = false;
-            // 
             // FormularioPedido
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(940, 550);
+            this.ClientSize = new System.Drawing.Size(875, 550);
+            this.Controls.Add(this.Cemefar);
             this.Controls.Add(this.Lbl_pedido);
+            this.Controls.Add(this.Empsephar);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.Cofarma);
             this.Controls.Add(this.Borrar);
@@ -262,7 +258,6 @@
             this.Controls.Add(this.Secundaria);
             this.Controls.Add(this.Principal);
             this.Controls.Add(this.Sucursal);
-            this.Controls.Add(this.groupBoxDistribuidor);
             this.Controls.Add(this.Distribuidor);
             this.Controls.Add(this.textBoxCantidad);
             this.Controls.Add(this.Cantidad);
@@ -273,8 +268,6 @@
             this.Name = "FormularioPedido";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.groupBoxDistribuidor.ResumeLayout(false);
-            this.groupBoxDistribuidor.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -299,7 +292,6 @@
         private System.Windows.Forms.Label Lbl_pedido;
         private System.Windows.Forms.RadioButton Empsephar;
         private System.Windows.Forms.RadioButton Cemefar;
-        private System.Windows.Forms.GroupBox groupBoxDistribuidor;
     }
 }
 
