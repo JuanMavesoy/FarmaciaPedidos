@@ -55,7 +55,7 @@
             this.NombreMedicamento.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NombreMedicamento.Location = new System.Drawing.Point(347, 98);
             this.NombreMedicamento.Name = "NombreMedicamento";
-            this.NombreMedicamento.Size = new System.Drawing.Size(193, 16);
+            this.NombreMedicamento.Size = new System.Drawing.Size(192, 16);
             this.NombreMedicamento.TabIndex = 0;
             this.NombreMedicamento.Text = "Nombre del Medicamento";
             // 
@@ -65,7 +65,6 @@
             this.txtNombreMedicamento.Name = "txtNombreMedicamento";
             this.txtNombreMedicamento.Size = new System.Drawing.Size(215, 20);
             this.txtNombreMedicamento.TabIndex = 1;
-            this.txtNombreMedicamento.TextChanged += new System.EventHandler(this.txtNombreMedicamento_TextChanged);
             // 
             // TipoMedicamento
             // 
@@ -73,7 +72,7 @@
             this.TipoMedicamento.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TipoMedicamento.Location = new System.Drawing.Point(373, 144);
             this.TipoMedicamento.Name = "TipoMedicamento";
-            this.TipoMedicamento.Size = new System.Drawing.Size(162, 16);
+            this.TipoMedicamento.Size = new System.Drawing.Size(161, 16);
             this.TipoMedicamento.TabIndex = 2;
             this.TipoMedicamento.Text = "Tipo de Medicamento";
             // 
@@ -99,7 +98,6 @@
             this.comboBoxTipoMedicamento.TabIndex = 3;
             this.comboBoxTipoMedicamento.ValueMember = "Seleccione;Analgesico;Analeptico; Anestésico; Atiacido; Antidepresivo; Antibiotic" +
     "o";
-            this.comboBoxTipoMedicamento.SelectedIndexChanged += new System.EventHandler(this.comboBoxTipoMedicamento_SelectedIndexChanged);
             // 
             // Cantidad
             // 
@@ -107,7 +105,7 @@
             this.Cantidad.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Cantidad.Location = new System.Drawing.Point(453, 197);
             this.Cantidad.Name = "Cantidad";
-            this.Cantidad.Size = new System.Drawing.Size(73, 16);
+            this.Cantidad.Size = new System.Drawing.Size(72, 16);
             this.Cantidad.TabIndex = 4;
             this.Cantidad.Text = "Cantidad";
             // 
@@ -124,7 +122,7 @@
             this.Distribuidor.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Distribuidor.Location = new System.Drawing.Point(433, 287);
             this.Distribuidor.Name = "Distribuidor";
-            this.Distribuidor.Size = new System.Drawing.Size(92, 16);
+            this.Distribuidor.Size = new System.Drawing.Size(91, 16);
             this.Distribuidor.TabIndex = 6;
             this.Distribuidor.Text = "Distribuidor";
             // 
@@ -134,7 +132,7 @@
             this.Cofarma.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Cofarma.Location = new System.Drawing.Point(544, 249);
             this.Cofarma.Name = "Cofarma";
-            this.Cofarma.Size = new System.Drawing.Size(80, 20);
+            this.Cofarma.Size = new System.Drawing.Size(79, 20);
             this.Cofarma.TabIndex = 0;
             this.Cofarma.TabStop = true;
             this.Cofarma.Text = "Cofarma";
@@ -146,7 +144,7 @@
             this.Sucursal.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Sucursal.Location = new System.Drawing.Point(455, 393);
             this.Sucursal.Name = "Sucursal";
-            this.Sucursal.Size = new System.Drawing.Size(70, 16);
+            this.Sucursal.Size = new System.Drawing.Size(69, 16);
             this.Sucursal.TabIndex = 8;
             this.Sucursal.Text = "Sucursal";
             // 
@@ -156,7 +154,7 @@
             this.Principal.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Principal.Location = new System.Drawing.Point(545, 393);
             this.Principal.Name = "Principal";
-            this.Principal.Size = new System.Drawing.Size(81, 20);
+            this.Principal.Size = new System.Drawing.Size(80, 20);
             this.Principal.TabIndex = 9;
             this.Principal.Text = "Principal";
             this.Principal.UseVisualStyleBackColor = true;
@@ -167,7 +165,7 @@
             this.Secundaria.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Secundaria.Location = new System.Drawing.Point(645, 393);
             this.Secundaria.Name = "Secundaria";
-            this.Secundaria.Size = new System.Drawing.Size(100, 20);
+            this.Secundaria.Size = new System.Drawing.Size(99, 20);
             this.Secundaria.TabIndex = 10;
             this.Secundaria.Text = "Secundaria";
             this.Secundaria.UseVisualStyleBackColor = true;
@@ -217,7 +215,6 @@
             this.Lbl_pedido.Text = "REGISTRO DE PEDIDOS";
             this.Lbl_pedido.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             this.Lbl_pedido.UseCompatibleTextRendering = true;
-            this.Lbl_pedido.Click += new System.EventHandler(this.label1_Click);
             // 
             // Empsephar
             // 
@@ -225,7 +222,7 @@
             this.Empsephar.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Empsephar.Location = new System.Drawing.Point(544, 287);
             this.Empsephar.Name = "Empsephar";
-            this.Empsephar.Size = new System.Drawing.Size(97, 20);
+            this.Empsephar.Size = new System.Drawing.Size(96, 20);
             this.Empsephar.TabIndex = 1;
             this.Empsephar.TabStop = true;
             this.Empsephar.Text = "Empsephar";
@@ -237,7 +234,7 @@
             this.Cemefar.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Cemefar.Location = new System.Drawing.Point(545, 327);
             this.Cemefar.Name = "Cemefar";
-            this.Cemefar.Size = new System.Drawing.Size(80, 20);
+            this.Cemefar.Size = new System.Drawing.Size(79, 20);
             this.Cemefar.TabIndex = 2;
             this.Cemefar.TabStop = true;
             this.Cemefar.Text = "Cemefar";
@@ -265,6 +262,9 @@
             this.Controls.Add(this.TipoMedicamento);
             this.Controls.Add(this.txtNombreMedicamento);
             this.Controls.Add(this.NombreMedicamento);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FormularioPedido";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

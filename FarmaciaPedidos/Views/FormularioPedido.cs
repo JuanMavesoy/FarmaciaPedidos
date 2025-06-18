@@ -1,8 +1,10 @@
 ﻿using FarmaciaPedidos.Models;
 using FarmaciaPedidos.Services;
+using FarmaciaPedidos.Views;
 using System;
 using System.Drawing.Drawing2D;
 using System.Linq;
+using System.Reflection;
 using System.Windows.Forms;
 
 namespace FarmaciaPedidos
@@ -71,9 +73,9 @@ namespace FarmaciaPedidos
             var builder = new ResumenPedidoBuilder();
             var resumen = builder.ConstruirResumen(pedido);
 
-            // Mostrar en MessageBox por ahora (luego abrirás ResumenPedidoForm)
-            MessageBox.Show($"{resumen.TituloVentana}\n\n{resumen.DetalleMedicamento}\n\n{resumen.DireccionEntrega}",
-                "Resumen del Pedido", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            // Mostrar formulario de resumen
+            var resumenForm = new ResumenPedidoForm(resumen);
+            resumenForm.ShowDialog();
         }
 
         private void Borrar_Click(object sender, EventArgs e)
@@ -88,24 +90,5 @@ namespace FarmaciaPedidos
             Secundaria.Checked = false;
         }
 
-        private void txtNombreMedicamento_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBoxTipoMedicamento_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }
