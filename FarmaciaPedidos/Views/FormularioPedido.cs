@@ -76,9 +76,16 @@ namespace FarmaciaPedidos
             // Mostrar formulario de resumen
             var resumenForm = new ResumenPedidoForm(resumen);
             resumenForm.ShowDialog();
+
+            LimpiarFormulario();
         }
 
         private void Borrar_Click(object sender, EventArgs e)
+        {
+            LimpiarFormulario();
+        }
+
+        public void LimpiarFormulario()
         {
             txtNombreMedicamento.Text = "";
             comboBoxTipoMedicamento.SelectedIndex = -1;

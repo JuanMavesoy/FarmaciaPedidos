@@ -134,7 +134,6 @@
             this.Cofarma.Name = "Cofarma";
             this.Cofarma.Size = new System.Drawing.Size(79, 20);
             this.Cofarma.TabIndex = 0;
-            this.Cofarma.TabStop = true;
             this.Cofarma.Text = "Cofarma";
             this.Cofarma.UseVisualStyleBackColor = true;
             // 
@@ -224,7 +223,6 @@
             this.Empsephar.Name = "Empsephar";
             this.Empsephar.Size = new System.Drawing.Size(96, 20);
             this.Empsephar.TabIndex = 1;
-            this.Empsephar.TabStop = true;
             this.Empsephar.Text = "Empsephar";
             this.Empsephar.UseVisualStyleBackColor = true;
             // 
